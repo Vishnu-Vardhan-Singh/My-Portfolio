@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    margin-inline: 5px;
+    color: bisque;
+
+}
+header ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+#header-logo,#header-link{
+    margin:10px;
+}
+a{
+    color: rgb(0, 0, 0);
+    background-color: lightpink;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+a:hover{
+    color: rgb(47, 255, 0);
+}
