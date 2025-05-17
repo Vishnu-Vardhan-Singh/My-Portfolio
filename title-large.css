@@ -1,4 +1,6 @@
 .title-large{
   color:yellow;
   background-color:green;
+  padding: 10px;
+  border-radius: 0;
 }
