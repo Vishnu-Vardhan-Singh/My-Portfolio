@@ -1,0 +1,37 @@
+nav{
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 5px 0px rgba(134, 129, 129, 1);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(134, 129, 129, 1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(134, 129, 129, 1);
+
+}
+
+.nav {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 48.5rem) {
+    .nav-links li:not(:last-child) {
+        display: none;
+    }
+    .nav-links{
+        padding-inline: 1rem;
+    }
+    .profile-picture{
+        width: 100px;
+        height: 100px;
+    }
+}
+section{
+    margin-top: 20px;
+}

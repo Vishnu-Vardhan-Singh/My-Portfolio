@@ -1,24 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="title-large.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishnu Vardhan Singh | Front-end Developer</title>
+    <meta name="color-scheme" content="dark light" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#f2d544" />
+    <meta name="description" content="Vishnu Vardhan Singh  | Web developer" />
+    <meta name="description"
+        content="Vishnu Vardhan Singh is a web developer based in India. Vishnu Vardhan Singh brings your idea to life with modern technology." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Vishnu Vardhan Singh | Front-end developer" />
+    <meta property="og:description"
+        content="Vishnu is a web developer based in India. Vishnu brings your idea to life with modern technology." />
+    <meta property="og:image" content="/assets/share.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://portfolio.learnhtmlcss.online/" />
+    <meta property="twitter:title" content="Vishnu Vardhan Singh  | Web developer" />
+    <meta property="twitter:description"
+        content="Vishnu Vardhan Singh is a web developer based in India. Vishnu Vardhan Singh brings your idea to life with modern technology." />
+    <meta property="twitter:image" content="/assets/share.png" />
 </head>
+
 <body>
-    <header>
-        <div id="header-logo" class="title-large"><h1>Logo</h1></div>
-        <nav>
-            <ul id="header-link">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>   
-            <li><a href="#contact">Contact</a></li>
-            
-            </ul>
-        </nav>
-    </header>
+
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <img src="assets/logo.svg" alt="Vishnu Vardhan Singh  logo" width="45" height="43" style='filter: brightness(150%)' />
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about-me" class="btn btn--nav">About me</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="btn btn--nav">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="btn btn--nav">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials" class="btn btn--nav">Experience</a>
+                    </li>
+                    <li class="nav-hire-me">
+                        <a href="#hire-me" class="btn btn--raised">Hire me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button id="toggle-theme" aria-label="Toggle dark theme">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+                width="24px" fill="var(--light-icon)">
+                <rect fill="none" height="24" width="24" />
+                <path
+                    d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" />
+            </svg>
+        </button>
+    </nav>
+    <main>
+        <section id="intro" class="layout-section" aria-describedby="intro-h1 intro-h2">
+            <div class="container">
+                <div style="text-align:left;">
+                    <img src="./assets/profile-picture.jpeg" height="200" width="200"
+                        style='border: rgba(134, 129, 129, 1) solid 2px; border-radius: 10%;margin-bottom: 1rem;box-shadow: 0px 0px 6px 0px rgba(134, 129, 129, 1);-webkit-box-shadow: 0px 0px 6px 0px rgba(134, 129, 129, 1);-moz-box-shadow: 0px 0px 6px 0px rgba(134, 129, 129, 1); ' class='profile-picture'>
+                </div>
+
+                <h1 id="intro-h1" class="title--lg">Vishnu Vardhan Singh</h1>
+                <h2 id="intro-h2" class="title--lg" style=' font-size: 2rem;margin-top: 1rem; text-decoration:
+                underline; '>Front End Developer</h2>
+                <p class="text--xl">
+                    I am <strong>Vishnu Vardhan Singh</strong>, a dedicated Front End Developer from Gorakhpur,
+                    Uttar Pradesh. </p>
+                <br />
+                <p class="text--xl">
+                    I am a self-taught Front End Developer passionate about building beautiful, responsive, and
+                    user-friendly web applications. I transform ideas into engaging digital experiences using modern
+                    technologies like React, JavaScript, and Tailwind CSS.
+                </p>
+            </div>
+            <button id="scroll-down" aria-label="Scroll down">
+
+            </button>
+        </section>
+        <section id="about-me" class="layout-section" aria-labelledby="heading-aboutme">
+            <div class="container">
+                <h2 id="heading-aboutme" class="title--sm layout-section-title">
+                    About me
+                </h2>
+                <div class="layout-grid-half">
+                    <div>
+                        <p class="text--lg" style=' font-weight: 900;'>
+                            I have a BCA degree from UPRTOU, which gave me computer science fundamentals.
+                            <br />From 2016 to March 2025, I worked in sales and healthcare sector, where I
+                            developed
+                            strong communication, problem-solving, and time management skills.
+                        </p>
+                        <p class="text--lg" style=' font-weight: 900;'>However, my true passion has always been
+                            technology and web development. Due to financial
+                            constraints in my family, I couldn't pursue it initially. By March 2025, I decided to
+                            fully
+                            commit to this dream. I spent the last 9 months doing intensive self-study and built 4
+                            production-ready projects from scratch.</p>
+                        <p class="text--lg" style=' font-weight: 900;'>
+                            Now I'm a proficient Front End Developer with expertise in React, state management,
+                            responsive design, and API integration. My sales background actually helps me in tech
+                            because I understand user needs and can communicate effectively with teams.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text--lg">
+                            In just 9 months (March -
+                            December
+                            2025), I have mastered:
+                        <ol>
+                            <li>
+                                <p>HTML & CSS3 for responsive design</p>
+                            </li>
+                            <li>
+                                <p>JavaScript (ES6+) for interactive features</p>
+                            </li>
+                            <li>
+                                <p>React.js for building dynamic applications</p>
+                            </li>
+                            <li>
+                                <p>State management with Redux Toolkit</p>
+                            </li>
+                            <li>
+                                <p>Routing with React Router</p>
+                            </li>
+                            <li>
+                                <p>Styling with Tailwind CSS</p>
+                            </li>
+                            <li>
+                                <p>Version control with Git & GitHub</p>
+                            </li>
+                            <li>
+                                <p>REST API integration</p>
+                            </li>
+                        </ol>
+                        </p>
+                        <p class="text--lg">
+                            Curious to know more? Check-out my
+                            <a href="#portfolio">Projects</a> or
+                            <a href="#hire-me">hire me</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="layout-section" aria-labelledby="heading-portfolio">
+            <div class="container">
+                <h2 id="heading-portfolio" class="title--sm layout-section-title" style='margin-bottom: 4rem;'>
+                    Projects
+                </h2>
+                <div class="portfolio">
+                    <img src="assets/project-1.jpg" width="300" height="300" alt="E-Commerce app"
+                        class="portfolio-screenshot" />
+                    <div>
+                        <h3 class="title">E-Commerce web app</h3>
+                        <p class="text">
+                            This React based project showcases three key abilities: First, managing complex
+                            application
+                            state using Redux Toolkit. Second, optimizing API calls and data fetching using RTK
+                            Query
+                            which reduced redundant API calls by 70% and third, creating a responsive,
+                            high-performance
+                            UI with Tailwind CSS that works perfectly on all devices.
+                        </p>
+                        <a href="https://example.com" class="btn btn--line" target="_blank">🔗 View Live</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="assets/project-2.jpg" width="300" height="300" alt="D app" class="portfolio-screenshot" />
+                    <div>
+                        <h3 class="title">Expense Tracker</h3>
+                        <p class="text">
+                            My Expense Tracker Web App demonstrates React fundamentals expertise. It features like
+                            smart
+                            filtering, categorization, and priority management. The key technical achievement is the
+                            localStorage implementation for data persistence. The app automatically saves all data
+                            and
+                            restores them on page reload, ensuring zero data loss.
+                        </p>
+                        <a href="https://example.com" class="btn btn--line" target="_blank">🔗 View Live</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="assets/project-3.jpeg" width="300" height="300" alt="Travel planner"
+                        class="portfolio-screenshot" />
+                    <div>
+                        <h3 class="title">Recipe Finder</h3>
+                        <p class="text">
+                            This project demonstrates my JavaScript fundamentals and ability to build complete
+                            applications without framework dependencies. It shows I understand the core web
+                            technologies
+                            HTML, CSS, JavaScript and can integrate with real APIs using Fetch. Many companies still
+                            use
+                            vanilla JS for performance-critical applications.
+                        </p>
+                        <a href="https://example.com" class="btn btn--line" target="_blank">🔗 View Live</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="assets/project-4.jpeg" width="300" height="300" alt="Sports tracker"
+                        class="portfolio-screenshot" />
+                    <div>
+                        <h3 class="title">To Do App</h3>
+                        <p class="text">
+                            My very first project using vanilla HTML, CSS and JS + localStorage. This taught me DOM
+                            manipulation, event handling, and data persistence fundamentals.
+                        </p>
+                        <a href="https://example.com" class="btn btn--line" target="_blank">🔗 View Live</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="layout-section" aria-labelledby="heading-experience">
+            <div class="container">
+                <h2 id="heading-experience" class="title--sm layout-section-title">
+                    Skills
+                </h2>
+                <ul class="tags">
+                    <li class="tag">React JS</li>
+                    <li class="tag">React Router</li>
+                    <li class="tag">Redux Toolkit</li>
+                    <li class="tag">RTK Query</li>
+                    <li class="tag">Tailwind CSS</li>
+                    <li class="tag">Git & GitHub</li>
+                    <li class="tag">CRUD</li>
+                    <li class="tag">REST API</li>
+                    <li class="tag">JavaScript/ES6+</li>
+                    <li class="tag">HTML5</li>
+                    <li class="tag">CSS3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="testimonials" class="layout-section" aria-labelledby="heading-testimonials">
+            <div class="container">
+                <h2 id="heading-testimonials" class="title--sm layout-section-title">
+                    Experiences
+                </h2>
+                <div class="layout-grid-half">
+                    <figure>
+                        <blockquote>
+                            <section class="experience" id="experience">
+
+                                <div>
+                                    <div>
+                                        <div>
+                                            <h3>Front End Developer</h3>
+                                            <span>March 2025 – December 2025</span>
+                                        </div>
+                                        <div>Self-Training | Independent Learning</div>
+                                        <p>Completed intensive self-taught Front End Development program over 9
+                                            months.
+                                            Mastered modern web technologies and built 4 production-ready projects
+                                            from
+                                            scratch.</p>
+                                        <ul>
+                                            <li>Mastered React 18 with Hooks, Context API, and advanced patterns
+                                            </li>
+                                            <li>Built e-commerce app with Redux Toolkit and RTK Query (95+
+                                                Lighthouse
+                                                score)</li>
+                                            <li>Created expense tracker with localStorage and financial analytics
+                                                (97+
+                                                Lighthouse)</li>
+                                            <li>Developed recipe finder with REST API integration (98+ Lighthouse)
+                                            </li>
+                                            <li>Built to-do app demonstrating vanilla JavaScript fundamentals (96+
+                                                Lighthouse)</li>
+                                            <li>Deep understanding of state management, API integration, and
+                                                responsive
+                                                design</li>
+                                            <li>Proficient in HTML5, CSS3, JavaScript ES6+, Tailwind CSS, Git &
+                                                GitHub
+                                            </li>
+                                            <li>Achieved consistent 96-98+ Lighthouse performance scores</li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div>
+                                        <div>
+                                            <h3>Sales Representative</h3>
+                                            <span>2016 – March 2025 (Multiple Roles)</span>
+                                        </div>
+                                        <div>Healthcare & Retail Sector | Various
+                                            Organizations</div>
+                                        <p>9+ years in sales and customer service across reputable companies.
+                                            Developed
+                                            professional skills that directly transfer to tech roles.</p>
+                                        <ul>
+                                            <li><strong>Cadila Pharmaceuticals Ltd.</strong> (Medical Sales Rep) -
+                                                July
+                                                2024 to Dec 2024</li>
+                                            <li><strong>CORONA Remedies Pvt. Ltd.</strong> (Medical Sales Rep) - Dec
+                                                2021 to June 2024</li>
+                                            <li><strong>TTK Healthcare Limited</strong> (Medical Sales Rep) - Jan
+                                                2021
+                                                to Nov 2021</li>
+                                            <li><strong>Pathkind Diagnostic Pvt. Ltd.</strong> (Medical Sales Rep) -
+                                                Dec
+                                                2019 to Dec 2020</li>
+                                            <li><strong>Jalan Services Pvt. Ltd.</strong> (Sales Promoter) - May
+                                                2016 to
+                                                Nov 2019</li>
+                                        </ul>
+                                        <div>
+                                            <h4>Skills Developed (Transferable to Tech):</h4>
+                                            <ul>
+                                                <li>📞 <strong>Communication Skills:</strong> Excellent verbal and
+                                                    written communication - critical for team collaboration</li>
+                                                <li>⏱️ <strong>Time Management:</strong> Juggled multiple priorities
+                                                    simultaneously - key for managing complex projects</li>
+                                                <li>🤝 <strong>Client Relations:</strong> Built and maintained
+                                                    relationships - important for stakeholder management</li>
+                                                <li>🎯 <strong>Target Achievement:</strong> Consistent performer -
+                                                    demonstrates commitment and accountability</li>
+                                                <li>🧠 <strong>Problem Solving:</strong> Addressed customer
+                                                    objections -
+                                                    translates to debugging and troubleshooting</li>
+                                                <li>💪 <strong>Resilience:</strong> Overcame challenges and adapted
+                                                    to
+                                                    changes - proves determination</li>
+                                                <li>🚀 <strong>Quick Learning:</strong> Transitioned across 5
+                                                    different
+                                                    companies - shows adaptability</li>
+                                                <li>📊 <strong>Data Analysis:</strong> Tracked metrics and
+                                                    performance -
+                                                    foundation for understanding analytics</li>
+                                            </ul>
+                                        </div>
+                                        <p><em><strong>Why I Made This Change:</strong> While I excelled in sales,
+                                                my
+                                                true passion has always been technology and web development. Due to
+                                                financial constraints in my family, I couldn't pursue this dream
+                                                initially. By March 2025, I decided to fully commit to web
+                                                development
+                                                and successfully transitioned within 9 months to become a proficient
+                                                Front End Developer.</em></p>
+                                    </div>
+
+
+                                </div>
+                            </section>
+
+                        </blockquote>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="hire-me" class="layout-section" aria-labelledby="heading-hireme">
+            <div class="container">
+                <h2 id="heading-hireme" class="title--sm layout-section-title">
+                    Hire Me
+                </h2>
+                <div class="hire-form">
+                    <div>
+                        <address>
+                            <div class="hire-line">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 2.5C10.1625 2.5 6.25 6.4125 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 6.4125 19.8375 2.5 15 2.5ZM15 14.375C13.275 14.375 11.875 12.975 11.875 11.25C11.875 9.525 13.275 8.125 15 8.125C16.725 8.125 18.125 9.525 18.125 11.25C18.125 12.975 16.725 14.375 15 14.375Z"
+                                        fill="var(--light-icon)" />
+                                </svg>
+                                <div>
+                                    <p class="text">Current location</p>
+                                    <p class="text--bold">
+                                        Gorakhpur, 273015<br />
+                                        Uttar Pradesh, India <br />
+                                        <a href="tel:+917007501574" aria-labelledby="Contact number">
+
+                                            +91-7007501574
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hire-line">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25 5H5C3.625 5 2.5125 6.125 2.5125 7.5L2.5 22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM25 10L15 16.25L5 10V7.5L15 13.75L25 7.5V10Z"
+                                        fill="var(--light-icon)" />
+                                </svg>
+                                <div>
+                                    <p class="text">Email</p>
+                                    <a class="text--bold"
+                                        href="mailto:sugam.singh3@gmail.com">sugam.singh3@gmail.com</a>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                    <form>
+                        <label for="hire-name" class="sr-only">Your name</label>
+                        <input id="hire-name" type="text" autocomplete="name" class="input" placeholder="Your name" />
+                        <label for="hire-email" class="sr-only">Your email</label>
+                        <input id="hire-email" type="email" autocomplete="email" class="input"
+                            placeholder="Your email" />
+                        <label for="hire-message" class="sr-only">Your message</label>
+                        <textarea id="hire-message" class="input" placeholder="Your message"></textarea>
+                        <div class="hire-action">
+                            <input type="submit" class="btn btn--raised" value="Send" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="side">
+                        <img src="assets/logo.svg" alt="Vishnu Vardhan Logo" width="45" height="43" style='filter: brightness(150%);' />
+                        <div>
+                            <p class="text--bold footer-name">
+                                &copy; 2025 <br />
+                                Vishnu Vardhan Singh
+                            </p>
+                            <p class="footer-rights">
+                                <small class="text--sm">All rights reserved.</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="side">
+                        <ul class="footer-social">
+                            <li>
+                                <a href='https://github.com/Vishnu-Vardhan-Singh' target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 50 50">
+                                        <path
+                                            d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"
+                                            fill="var(--light-icon)">
+                                        </path>
+                                    </svg>
+                                    <a>
+
+                            </li>
+                            <li>
+                                <a href='https://www.linkedin.com/in/vishnu-vardhan-singh1103/' target="_blank">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM7.68101 13.252H11.307V24.1464H7.68101V13.252ZM11.5479 9.8818C11.5244 8.8136 10.7605 8 9.5201 8C8.27969 8 7.46875 8.8136 7.46875 9.8818C7.46875 10.9279 8.25572 11.7649 9.47304 11.7649H9.49621C10.7605 11.7649 11.5479 10.9279 11.5479 9.8818ZM20.2088 12.9961C22.5948 12.9961 24.3836 14.5535 24.3836 17.8998L24.3834 24.1464H20.7576V18.3178C20.7576 16.8538 20.2329 15.8548 18.9203 15.8548C17.9186 15.8548 17.3219 16.5283 17.0599 17.1788C16.964 17.4119 16.9404 17.7367 16.9404 18.0623V24.1467H13.3141C13.3141 24.1467 13.3619 14.2745 13.3141 13.2522H16.9404V14.7953C17.4217 14.0535 18.2836 12.9961 20.2088 12.9961Z"
+                                            fill="var(--light-icon)" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <script type="module" src="main.js"></script>
 </body>
+
 </html>

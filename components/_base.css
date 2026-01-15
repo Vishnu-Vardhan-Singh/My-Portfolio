@@ -1,0 +1,87 @@
+:root {
+    --primary: #44acf2;
+    --dark-blue: #130c24;
+    --black: #232020;
+    --gray: #5c5c5c;
+    --beige: #ff548772;
+    --gap: 80px;
+
+    /* theme dependent variables */
+    --text-color: white;
+    --light-icon: white;
+    --gray-dark: #2e2e2e;
+    --gray-light: #8b8b8b;
+    --dark-icon: var(--black);
+    --anchor-color: var(--primary);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+main{
+    /* border: red solid 5px; */
+    overflow: auto;
+    scrollbar-width:none ;
+}
+
+html.light-theme {
+    background-color: var(--beige);
+    --text-color: var(--black);
+    --gray-light: var(--gray-dark);
+    --light-icon: var(--black);
+    --dark-icon: white;
+    --anchor-color: var(--black);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    width: 100%;
+    /* border: #130c24 solid 10px; */
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+@media (max-width: 37.5rem) {
+    :root {
+        --gap: 30px;
+    }
+
+    html {
+        font-size: 70%;
+        /* as long as the smallest font is still legible */
+    }
+}

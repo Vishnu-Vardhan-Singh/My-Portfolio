@@ -1,0 +1,14 @@
+#toggle-theme {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transition: translate 180ms;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 0.25rem;
+}
+#toggle-theme:active {
+    translate: 1px 1px;
+}

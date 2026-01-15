@@ -1,0 +1,19 @@
+.layout-section {
+    padding-bottom: 20px;
+    margin-top: 3rem;
+}
+
+.layout-grid-half {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+}
+
+@media (max-width: 37.5rem) {
+    .layout-section {
+        padding-bottom: 100px;
+    }
+    .layout-grid-half {
+        grid-template-columns: 1fr;
+    }
+}
