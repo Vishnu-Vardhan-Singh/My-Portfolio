@@ -11,6 +11,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 0%;
 }
 
 .nav-links {
@@ -21,15 +22,22 @@ nav{
 }
 
 @media (max-width: 48.5rem) {
-    .nav-links li:not(:last-child) {
+    /* .nav-links li:not(:last-child) {
+        display: none;
+    } */
+    img[alt="Vishnu Vardhan Singh logo"]{
         display: none;
     }
     .nav-links{
-        padding-inline: 1rem;
+        justify-content: start;
     }
     .profile-picture{
         width: 100px;
         height: 100px;
+    }
+    .nav{
+        padding-bottom: 0%;
+        padding-top: 1.5rem;
     }
 }
 section{
