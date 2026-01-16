@@ -419,17 +419,22 @@
                             </div>
                         </address>
                     </div>
-                    <form>
+                    <form action="https://formsubmit.co/6befa9eecf6e1860246c53cae8fe9aeb.com" method="POST">
                         <label for="hire-name" class="sr-only">Your name</label>
-                        <input id="hire-name" type="text" autocomplete="name" class="input" placeholder="Your name" />
+                        <input id="hire-name" type="text" autocomplete="name" class="input" placeholder="Your name" name="name" required />
                         <label for="hire-email" class="sr-only">Your email</label>
                         <input id="hire-email" type="email" autocomplete="email" class="input"
-                            placeholder="Your email" />
+                            placeholder="Your email" name="email" required />
                         <label for="hire-message" class="sr-only">Your message</label>
-                        <textarea id="hire-message" class="input" placeholder="Your message"></textarea>
-                        <div class="hire-action">
+                        <textarea id="hire-message" class="input" placeholder="Your message" name="message" required></textarea>
+                        <div class="hire-action" >
                             <input type="submit" class="btn btn--raised" value="Send" />
                         </div>
+                        <!-- hidden fields -->
+                        <input type="hidden" name="_subject" value="New portfolio contact">
+                        <input type="hidden" name="_template" value="table"> <!-- cleaner email layout -->
+                        <input type="hidden" name="_captcha" value="true"> <!-- keep reCAPTCHA on -->
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
                     </form>
                 </div>
             </div>
