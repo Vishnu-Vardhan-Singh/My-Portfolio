@@ -23,13 +23,7 @@ nav {
 
 @media (max-width: 48.5rem) {
 
-    .nav-hire-me {
-        /* justify-self: end; */
-        position: absolute;
-        bottom: 0;
-        right:0;
-
-    }
+    
     img[alt="Vishnu Vardhan Singh logo"] {
         display: none;
     }
