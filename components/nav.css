@@ -1,4 +1,4 @@
-nav{
+nav {
     margin-bottom: 5px;
     box-shadow: 0px 5px 5px 0px rgba(134, 129, 129, 1);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(134, 129, 129, 1);
@@ -22,24 +22,40 @@ nav{
 }
 
 @media (max-width: 48.5rem) {
-    /* .nav-links li:not(:last-child) {
-        display: none;
-    } */
-    img[alt="Vishnu Vardhan Singh logo"]{
+
+    .nav-hire-me {
+        /* justify-self: end; */
+        position: absolute;
+        bottom: 0;
+        right:0;
+
+    }
+    img[alt="Vishnu Vardhan Singh logo"] {
         display: none;
     }
-    .nav-links{
+
+    .nav-links {
         justify-content: start;
+        flex-wrap: wrap;
+        position: relative;
     }
-    .profile-picture{
+
+
+    .profile-picture {
         width: 100px;
         height: 100px;
     }
-    .nav{
+
+    .nav {
         padding-bottom: 0%;
         padding-top: 1.5rem;
     }
+
+    .nav {
+        flex-wrap: wrap;
+    }
 }
-section{
+
+section {
     margin-top: 20px;
 }

@@ -4,3 +4,11 @@
     margin-inline: auto;
 }
 
+@media (max-width: 48.5rem){
+    .container{
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+
+
